@@ -1,0 +1,28 @@
+# Exact versions the code was tested with (Python 3.14). Newer releases are not
+# drop-in: e.g. torchvision 0.29 removed torchvision.io.read_video, which the
+# HMDB51 loaders use.
+
+# core: distillation, extractors, evaluation
+torch==2.10.0
+torchvision==0.25.0
+einops==0.8.2
+typed-argument-parser==1.11.0
+transformers==5.2.0
+timm==0.9.8
+huggingface_hub==1.4.1
+numpy==2.4.4
+pillow==11.3.0
+tqdm==4.67.3
+
+# audio / video (MusicFM, VideoMAE-v2, FMA, HMDB51)
+torchaudio==2.10.0
+soundfile==0.13.1
+scipy==1.17.1
+safetensors==0.8.0
+av==17.0.0
+easydict==1.13                 # imported by VideoMAE-v2's Hugging Face model code
+
+# interactive demo, Hugging Face downloads
+gradio==6.6.0
+pandas==2.3.3
+pyarrow==24.0.0

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+_verify/
+outputs/
+data/
+checkpoints/
+distilled/
+results/
+.val_cache/
